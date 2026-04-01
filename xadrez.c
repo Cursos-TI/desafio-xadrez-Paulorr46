@@ -23,6 +23,7 @@ int main(){
     break;
 
     case 2:
+    //Mover a Rainha 8 Casas a Esquerda
     do{
         printf("Esquerda\n");
         i++;
@@ -30,6 +31,7 @@ int main(){
     break;
 
     case 3:
+    //Mover Bispo 5 Casas a diagonal Superior Direita
     while(i < 5){
         printf("Cima, Direta\n");
         i++;

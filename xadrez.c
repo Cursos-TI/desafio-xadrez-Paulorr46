@@ -3,11 +3,14 @@ int main(){
 
     int opcao;
     int i = 0;
+     int movimentoCavalo = 1; //variavel para controle o movimento do cavalo em L
+    
 
     printf("Qual peça você gostaria de movimentar?\n");
     printf("1. Torre\n");
     printf("2. Rainha\n");
     printf("3. Bispo\n");
+    printf("4. Cavalo\n");
     scanf("%d", &opcao);
 
     switch (opcao){
@@ -35,8 +38,23 @@ int main(){
     while(i < 5){
         printf("Cima, Direta\n");
         i++;
+        break;
     }
-    break;
+
+    case 4: 
+    // mover Cavalo em L
+   
+        while (movimentoCavalo > 0)
+        {
+            for(int i = 0; i < 2; i++){
+                printf("Cima\n"); //imprime 'cima' duas vezes
+            }
+                printf("Direita\n"); // imprimee 'direita' duas vezes
+                movimentoCavalo--;
+        }
+        break;
+    
+    
 
     default: 
     printf("Opção inválida!\n");
